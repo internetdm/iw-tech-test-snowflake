@@ -1,0 +1,57 @@
+Type	Journal Row	Currency	Version	Year	Month	Business Unit	Account Code	Description	Cost Centre	Funder	Project	Amount	Amount Type	Journal Description	Jnl Line Description
+Q3 FC input - Core Centres	1	MMK	Q3Forecast	2020	SEP	MMA_Pro	601010	Grant Income	10000	B012	NotAnalysed	-96439970.69	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	2	MMK	Q3Forecast	2020	OCT	MMA_Pro	601010	Grant Income	10000	B012	NotAnalysed	-96032400.74	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	3	MMK	Q3Forecast	2020	NOV	MMA_Pro	601010	Grant Income	10000	B012	NotAnalysed	-101970539.93	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	4	MMK	Q3Forecast	2020	DEC	MMA_Pro	601010	Grant Income	10000	B012	NotAnalysed	-95839247.05	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	5	MMK	Q3Forecast	2020	SEP	MMA_Pro	617300	Diaphragm Insertion	10000	Y001	NotAnalysed	-42754463.05	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	6	MMK	Q3Forecast	2020	OCT	MMA_Pro	617300	Diaphragm Insertion	10000	Y001	NotAnalysed	-28141584.07	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	7	MMK	Q3Forecast	2020	NOV	MMA_Pro	617300	Diaphragm Insertion	10000	Y001	NotAnalysed	-25140935.98	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	8	MMK	Q3Forecast	2020	DEC	MMA_Pro	617300	Diaphragm Insertion	10000	Y001	NotAnalysed	-30977203.47	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	9	MMK	Q3Forecast	2020	SEP	MMA_Pro	792400	Cost Saving (Budget)	10000	B012	NotAnalysed	96439970.69	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	10	MMK	Q3Forecast	2020	OCT	MMA_Pro	792400	Cost Saving (Budget)	10000	B012	NotAnalysed	96032400.74	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	11	MMK	Q3Forecast	2020	NOV	MMA_Pro	792400	Cost Saving (Budget)	10000	B012	NotAnalysed	101970539.93	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	12	MMK	Q3Forecast	2020	DEC	MMA_Pro	792400	Cost Saving (Budget)	10000	B012	NotAnalysed	95839247.05	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	13	MMK	Q3Forecast	2020	SEP	MMA_Pro	792400	Cost Saving (Budget)	10000	Y001	NotAnalysed	40106475.99	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	14	MMK	Q3Forecast	2020	OCT	MMA_Pro	792400	Cost Saving (Budget)	10000	Y001	NotAnalysed	33470209.64	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	15	MMK	Q3Forecast	2020	NOV	MMA_Pro	792400	Cost Saving (Budget)	10000	Y001	NotAnalysed	33185360.17	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	16	MMK	Q3Forecast	2020	DEC	MMA_Pro	792400	Cost Saving (Budget)	10000	Y001	NotAnalysed	37998865.40	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	17	MMK	Q3Forecast	2020	SEP	MMA_Pro	W82300	Number of Other Personnel	10000	NotAnalysed	NotAnalysed	132.00	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	18	MMK	Q3Forecast	2020	OCT	MMA_Pro	W82300	Number of Other Personnel	10000	NotAnalysed	NotAnalysed	132.00	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	19	MMK	Q3Forecast	2020	NOV	MMA_Pro	W82300	Number of Other Personnel	10000	NotAnalysed	NotAnalysed	132.00	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	20	MMK	Q3Forecast	2020	DEC	MMA_Pro	W82300	Number of Other Personnel	10000	NotAnalysed	NotAnalysed	132.00	MemoAmount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	21	MMK	Q3Forecast	2020	SEP	MMA_Pro	617300	Diaphragm Insertion	10000	NotAnalysed	NotAnalysed	-5829.00	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	22	MMK	Q3Forecast	2020	OCT	MMA_Pro	617300	Diaphragm Insertion	10000	NotAnalysed	NotAnalysed	-3821.00	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	23	MMK	Q3Forecast	2020	NOV	MMA_Pro	617300	Diaphragm Insertion	10000	NotAnalysed	NotAnalysed	-3488.00	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	24	MMK	Q3Forecast	2020	DEC	MMA_Pro	617300	Diaphragm Insertion	10000	NotAnalysed	NotAnalysed	-4235.00	MemoAmount	Q3 FC	Q3 FC DEC
+Q3 FC input - Core Centres	25	MMK	Q3Forecast	2020	SEP	MMA_Pro	610010	MSP/PAC	10000	NotAnalysed	NotAnalysed	-54.00	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Core Centres	26	MMK	Q3Forecast	2020	OCT	MMA_Pro	610010	MSP/PAC	10000	NotAnalysed	NotAnalysed	-31.00	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Core Centres	27	MMK	Q3Forecast	2020	NOV	MMA_Pro	610010	MSP/PAC	10000	NotAnalysed	NotAnalysed	-29.00	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Core Centres	28	MMK	Q3Forecast	2020	DEC	MMA_Pro	610010	MSP/PAC	10000	NotAnalysed	NotAnalysed	-39.00	MemoAmount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	29	MMK	Q3Forecast	2020	SEP	MMA_Pro	601010	Grant Income	12000	B012	NotAnalysed	-13851789.19	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	30	MMK	Q3Forecast	2020	OCT	MMA_Pro	601010	Grant Income	12000	B012	NotAnalysed	-10325113.00	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	31	MMK	Q3Forecast	2020	NOV	MMA_Pro	601010	Grant Income	12000	B012	NotAnalysed	-8572057.02	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	32	MMK	Q3Forecast	2020	DEC	MMA_Pro	601010	Grant Income	12000	B012	NotAnalysed	-8403110.47	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	33	MMK	Q3Forecast	2020	SEP	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	Y001	NotAnalysed	-174760000.49	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	34	MMK	Q3Forecast	2020	OCT	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	Y001	NotAnalysed	-70450000.00	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	35	MMK	Q3Forecast	2020	NOV	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	Y001	NotAnalysed	-117135000.00	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	36	MMK	Q3Forecast	2020	DEC	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	Y001	NotAnalysed	-117110000.00	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	37	MMK	Q3Forecast	2020	SEP	MMA_Pro	792400	Cost Saving (Budget)	12000	B012	NotAnalysed	13851789.19	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	38	MMK	Q3Forecast	2020	OCT	MMA_Pro	792400	Cost Saving (Budget)	12000	B012	NotAnalysed	10325113.00	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	39	MMK	Q3Forecast	2020	NOV	MMA_Pro	792400	Cost Saving (Budget)	12000	B012	NotAnalysed	8572057.02	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	40	MMK	Q3Forecast	2020	DEC	MMA_Pro	792400	Cost Saving (Budget)	12000	B012	NotAnalysed	8403110.47	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	41	MMK	Q3Forecast	2020	SEP	MMA_Pro	792400	Cost Saving (Budget)	12000	Y001	NotAnalysed	123311394.14	Amount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	42	MMK	Q3Forecast	2020	OCT	MMA_Pro	792400	Cost Saving (Budget)	12000	Y001	NotAnalysed	59643563.80	Amount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	43	MMK	Q3Forecast	2020	NOV	MMA_Pro	792400	Cost Saving (Budget)	12000	Y001	NotAnalysed	83377268.80	Amount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	44	MMK	Q3Forecast	2020	DEC	MMA_Pro	792400	Cost Saving (Budget)	12000	Y001	NotAnalysed	83359943.80	Amount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	45	MMK	Q3Forecast	2020	SEP	MMA_Pro	W82300	Number of Other Personnel	12000	NotAnalysed	NotAnalysed	3.00	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	46	MMK	Q3Forecast	2020	OCT	MMA_Pro	W82300	Number of Other Personnel	12000	NotAnalysed	NotAnalysed	3.00	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	47	MMK	Q3Forecast	2020	NOV	MMA_Pro	W82300	Number of Other Personnel	12000	NotAnalysed	NotAnalysed	3.00	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	48	MMK	Q3Forecast	2020	DEC	MMA_Pro	W82300	Number of Other Personnel	12000	NotAnalysed	NotAnalysed	3.00	MemoAmount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	49	MMK	Q3Forecast	2020	SEP	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	NotAnalysed	NotAnalysed	-24482.00	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	50	MMK	Q3Forecast	2020	OCT	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	NotAnalysed	NotAnalysed	-9696.67	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	51	MMK	Q3Forecast	2020	NOV	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	NotAnalysed	NotAnalysed	-16373.56	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	52	MMK	Q3Forecast	2020	DEC	MMA_Pro	647200	Diaphragm Pieces Sales Pieces	12000	NotAnalysed	NotAnalysed	-16383.78	MemoAmount	Q3 FC	Q3 FC DEC
+Q3 FC input - Social Marketing (inc TPSM)	53	MMK	Q3Forecast	2020	SEP	MMA_Pro	640600	Combi-Pack Pack Sales - Unbranded	12000	NotAnalysed	NotAnalysed	-398.95	MemoAmount	Q3 FC	Q3 FC SEP
+Q3 FC input - Social Marketing (inc TPSM)	54	MMK	Q3Forecast	2020	OCT	MMA_Pro	640600	Combi-Pack Pack Sales - Unbranded	12000	NotAnalysed	NotAnalysed	-310.53	MemoAmount	Q3 FC	Q3 FC OCT
+Q3 FC input - Social Marketing (inc TPSM)	55	MMK	Q3Forecast	2020	NOV	MMA_Pro	640600	Combi-Pack Pack Sales - Unbranded	12000	NotAnalysed	NotAnalysed	-332.63	MemoAmount	Q3 FC	Q3 FC NOV
+Q3 FC input - Social Marketing (inc TPSM)	56	MMK	Q3Forecast	2020	DEC	MMA_Pro	640600	Combi-Pack Pack Sales - Unbranded	12000	NotAnalysed	NotAnalysed	-354.74	MemoAmount	Q3 FC	Q3 FC DEC

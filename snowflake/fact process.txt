@@ -1,0 +1,50 @@
+create or replace table temp_fact_basket(
+BASKETID number,
+CustomerId number,
+DOPid number,
+ProductId number,
+CUSTOMERREF varchar(100),
+DATEOFPURCHASE date,
+PRODUCTRef varchar(100),
+PRODUCTPRICE number);
+
+create or replace table fact_basket(
+BASKETID number,
+CustomerId number,
+DOPid number,
+ProductId number,
+PRODUCTPRICE number);
+
+insert into temp_fact_basket
+select 
+NVL(tb.BASKETID,-1),
+NVL(dc.CUSTOMERID,-1),
+-1 as DOPID,
+NVL(dp.PRODUCTID,-1),
+tb.CUSTOMERREF,
+tb.DATEOFPURCHASE,
+tb.PRODUCTREF,
+NVL(tb.PRODUCTPRICE,0)
+from temp_basket as tb
+  left join dim_customer as dc on tb.CustomerRef = dc.CustomerRef
+  left join dim_product as dp on tb.ProductRef = dp.ProductRef;
+
+--change date to interger
+update temp_fact_basket
+set DOPid = REPLACE(DATEOFPURCHASE,'-','')
+where DATEOFPURCHASE is not null;
+
+-- popu;ate fact table
+insert into fact_basket
+select 
+BASKETID,
+CUSTOMERID,
+DOPID,
+PRODUCTID,
+PRODUCTPRICE
+from temp_fact_basket;
+
+
+select 
+*
+from fact_basket

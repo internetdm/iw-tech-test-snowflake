@@ -1,0 +1,40 @@
+use database bsilvetest;
+
+--bsilvetestireland_stagejson
+
+ create or replace table stage_transaction_json(transaction_json variant);
+  
+  copy into stage_transaction_json
+  from @bsilvetestireland_stagejson/2021-01-21/transaction/;
+  
+  
+   create or replace table stage_basket(basketId number,CustomerRef varchar(100) , DateOfPurchase varchar(100), BasketContents variant);
+   create or replace table temp_basket(basketId number,CustomerRef varchar(100) , DateOfPurchase date, ProductRef varchar(100),ProductPrice number);
+  
+  create or replace sequence seqBasket start = 1 increment = 1;
+  
+  insert into stage_basket
+  select
+    seqBasket.nextval
+    ,transaction_json:customer_id::string
+    ,transaction_json:date_of_purchase::string
+    ,transaction_json:basket
+   from stage_transaction_json;
+   
+  
+insert into temp_basket  
+  select 
+   basketId
+   ,CustomerRef
+   ,DateOfPurchase
+   ,value:product_id::string
+   ,value:price
+   
+   from stage_basket
+   , lateral flatten(input => BASKETCONTENTS);
+   
+    select * from temp_basket;
+  
+
+  
+  

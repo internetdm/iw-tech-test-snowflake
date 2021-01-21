@@ -1,0 +1,36 @@
+select 
+CustomerRef,
+Loyalty_score,
+ProductRef,
+Category,
+count(*)
+from dim_customer as dc
+inner join fact_basket as fb on dc.customerid = fb.customerid
+inner join dim_Product as dp  on dp.Productid = fb.Productid
+group by CustomerRef,
+Loyalty_score,
+ProductRef,
+Category
+
+
+
+--customer total spend and number of product bought
+select 
+CustomerRef,count(*) as NumberOfItems,sum(productPrice) as totalCost
+from dim_customer as dc
+inner join fact_basket as fb on dc.customerid = fb.customerid
+group by customerRef
+
+-- break down to basket
+select 
+CustomerRef,fb.basketid,count(*) as NumberOfItems,sum(productPrice) as totalCost
+from dim_customer as dc
+inner join fact_basket as fb on dc.customerid = fb.customerid
+group by customerRef,fb.basketid
+
+-- totals by product
+select 
+ProductRef,count(*) as NumberOfItems,sum(productPrice) as totalCost
+from dim_Product as dp
+inner join fact_basket as fb on dp.Productid = fb.Productid
+group by ProductRef

@@ -1,0 +1,123 @@
+
+
+-- basket
+
+create or replace table dim_basket(BasketId number);
+
+insert into dim_basket
+   select BasketId from temp_basket;
+
+
+
+-- custoemr scd type 2
+
+create or replace sequence seqCustomer start = 1 increment = 1;
+
+
+create or replace table dim_customer(customerId number, CustomerRef varchar(250),loyalty_score number,DateValidFrom Date,DateValidto date);
+
+create or replace table temp_customer(customerId number, CustomerRef varchar(250),loyalty_score number,DateValidFrom Date,existsFlag number default 0);
+
+
+  
+  -- put id on all entries stage_customer
+  insert into temp_customer
+  with distinctCte as (
+    select
+     s.customer_id as CustomerRef
+    ,s.loyalty_score 
+    
+    from stage_customer as s
+    left join dim_customer as d on s.customer_ID=d.CUSTOMERREF
+    where d.CUSTOMERREF is null
+    group by s.customer_id 
+     ,s.loyalty_score 
+  )
+  select 
+  seqCustomer.nextval
+  ,CustomerRef
+  ,loyalty_score
+  ,current_date() as validFrom
+  ,NULL
+  from distinctCte;
+  
+  -- mark the refs in dim
+  update temp_customer as t
+  set existsFlag=1
+  from dim_customer as d 
+  where d.CustomerRef=t.CustomerRef;
+
+
+-- insert unknown value
+  insert into dim_customer
+  select
+  -1
+  ,'Unknown'
+  ,-1
+  ,'1001-01-01'
+  ,'1001-01-01';
+  
+ --if does exist then close existing and insert
+ update dim_customer as d
+ set DateValidto = current_date()
+ from temp_Customer as t  
+ where d.CustomerRef=t.CustomerRef
+       and d.DateValidto is NULL;
+  
+-- if now insert all
+  insert into dim_customer
+        select 
+        customerId ,
+        CustomerRef,
+        loyalty_score,
+        DateValidFrom,
+        NULL
+       from  temp_customer;
+
+
+
+
+-- product
+
+create or replace sequence seqProduct start = 1 increment = 1;
+
+
+create or replace table dim_product(ProductId number, ProductRef varchar(250),Category varchar(250),Description varchar(250));
+
+--product scd type 1
+-- insert unknown value
+  insert into dim_product
+  select
+  -1
+  ,'Unknown'
+  ,'Unknown'
+  ,'Unknown';
+  -- insert new rows
+  insert into dim_product
+  with distinctCte as (
+  select
+  PRODUCT_ID as productRef
+  ,PRODUCT_DESCRIPTION
+  ,PRODUCT_CATEGORY
+from stage_product as s
+    left join dim_product as d on s.PRODUCT_ID=d.ProductRef
+where d.ProductRef is null
+group by PRODUCT_ID
+  ,PRODUCT_DESCRIPTION
+  ,PRODUCT_CATEGORY
+  )
+  select 
+  seqProduct.nextval
+  ,productRef
+  ,PRODUCT_DESCRIPTION
+  ,PRODUCT_CATEGORY
+  from distinctCte;
+  
+  
+  --overwrite existing rows
+  update dim_product as d
+  set d.Category= s.PRODUCT_CATEGORY,d.Description= s.PRODUCT_DESCRIPTION
+    from stage_product as s
+    where s.PRODUCT_ID = d.ProductRef;
+    
+    
